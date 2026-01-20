@@ -1,11 +1,18 @@
 # Setup The Project Environment
 
-### If you're an Experienced/Senior Dev
+### If you're an idiot
 
 - (Don't git clone)
 - Run this: `setup_or_copy=setup eval "$(curl -fsSL https://github.com/jeff-hykin/better-shell-syntax || wget -qO- https://github.com/jeff-hykin/better-shell-syntax)"`
 - If you're on Windows, run it inside WSL (Ubuntu 20.04 preferably)
 - If you're a responsible human being and therefore don't want run a sketchy internet script, props to you 👍. Take a look at the "What is that `eval` command doing?" section at the bottom and you'll be able to run the commands yourself.
+
+### If you understand the basics of software development
+
+- Clone this repo.
+- Run standard Nix single-user installer: `sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --no-daemon`
+- Then read the Nix env: `source ~/.nix-profile/etc/profile.d/nix.sh`
+- Finally jump into the dev shell: `commands/start`
 
 ### If the above instructions didn't make sense
 
